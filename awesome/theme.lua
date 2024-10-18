@@ -20,16 +20,16 @@ theme.bg_urgent     = "#131313"
 theme.bg_minimize   = "#131313"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#aaaaaa"
-theme.fg_focus      = "#ffffff"
-theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#ffffff"
+theme.fg_normal     = "#ababab"
+theme.fg_focus      = "#b57033"
+theme.fg_urgent     = "#b57033"
+theme.fg_minimize   = "#b57033"
 
 theme.useless_gap   = 5
-theme.border_width  = dpi(1)
-theme.border_normal = "#000000"
-theme.border_focus  = "#535d6c"
-theme.border_marked = "#91231c"
+theme.border_width  = 2
+theme.border_normal = "#131313"
+theme.border_focus  = "#404040"
+theme.border_marked = "#404040"
 
 theme.tasklist_align = "center"
 theme.tasklist_disable_icon = true
@@ -96,13 +96,7 @@ theme.titlebar_floating_button_focus_inactive  = themes_path.."default/titlebar/
 theme.titlebar_floating_button_normal_active = themes_path.."default/titlebar/floating_normal_active.png"
 theme.titlebar_floating_button_focus_active  = themes_path.."default/titlebar/floating_focus_active.png"
 
-theme.titlebar_maximized_button_normal_inactive = themes_path.."default/titlebar/maximized_normal_inactive.png"
-theme.titlebar_maximized_button_focus_inactive  = themes_path.."default/titlebar/maximized_focus_inactive.png"
-theme.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png"
-theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
-
-theme.wallpaper = config_path.."wall.png"
-
+theme.titlebar_maximized_button_normal_inactive = themes_path.."default/titlebar/maximized_normal_inactive.png" theme.titlebar_maximized_button_focus_inactive  = themes_path.."default/titlebar/maximized_focus_inactive.png" theme.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png" theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png" theme.wallpaper = config_path.."wall.png"
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
 theme.layout_fairv = themes_path.."default/layouts/fairvw.png"

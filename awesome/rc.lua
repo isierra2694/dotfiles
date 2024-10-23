@@ -255,7 +255,6 @@ awful.screen.connect_for_each_screen(function(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-	    wibox.widget.systray(),
 	    cpu,
 	    myseparator,
 	    mem,
@@ -362,7 +361,7 @@ globalkeys = gears.table.join(
               {description = "restore minimized", group = "client"}),
 
     -- Prompt
-    awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
+    awful.key({ modkey },            "r",     function () awful.spawn.with_shell("rofi -show drun &>> /tmp/rofi.log") end,
               {description = "run prompt", group = "launcher"}),
 
     awful.key({ modkey }, "x",

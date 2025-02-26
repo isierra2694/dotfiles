@@ -1,0 +1,68 @@
+{
+	"layer": "top",
+	"height": 32,
+	"modules-left": ["sway/workspaces", "sway/mode"],
+	"modules-center": ["sway/window"],
+	"modules-right": ["group/hardware", "wireplumber", "network", "clock"],
+	"sway/workspaces": {
+		"persistent-workspaces": {
+			"1": ["DP-1"],
+			"2": ["DP-1"],
+			"3": ["DP-1"],
+			"4": ["DP-1"],
+			"5": ["DP-2"],
+			"6": ["DP-2"],
+			"7": ["DP-2"],
+			"8": ["DP-2"]
+		}
+	},
+	"sway/window": {
+		"max-length": 50
+	},
+	"group/hardware": {
+		"orientation": "horizontal",
+		"modules": [
+			"cpu",
+			"memory"
+		]
+	},
+	"cpu": {
+		"interval": 5,
+		"format": "cpu {usage}%"
+	},
+	"memory": {
+		"interval": 5,
+		"format": "mem {}%"
+	},
+	"wireplumber": {
+		"scroll-step": 1,
+		"format": "vol {volume}%",
+		"format-muted": "muted"
+	},
+	"network": {
+		"interface": "wlp15s0",
+		"format": "{ipaddr}",
+		"format-wifi": "{ipaddr}",
+		"tooltip-format": "interface: {ifname}\nSSID: {essid}\n\n{bandwidthUpBits} up, {bandwidthDownBits} down",
+		"format-disconnected": "disconnected",
+		"interval": 5
+	},
+	"clock": {
+		"format": "{:%a %d %b %H:%M}",
+		"tooltip-format": "<tt>{calendar}</tt>",
+		"calendar": {
+                     "mode"          : "month",
+                     "mode-mon-col"  : 3,
+                     "weeks-pos"     : "right",
+                     "on-scroll"     : 1,
+                     "on-click-right": "mode",
+                     "format": {
+                          "months":     "<span font_family='JetBrainsMono Nerd Font Mono' color='#ebdbb2'><b>{}</b></span>",
+                          "days":       "<span font_family='JetBrainsMono Nerd Font Mono' color='#ebdbb2'><b>{}</b></span>",
+                          "weeks":      "<span font_family='JetBrainsMono Nerd Font Mono' color='#458588'><b>W{}</b></span>",
+                          "weekdays":   "<span font_family='JetBrainsMono Nerd Font Mono' color='#d79921'><b>{}</b></span>",
+                          "today":      "<span font_family='JetBrainsMono Nerd Font Mono' color='#b16286'><b><u>{}</u></b></span>"
+                     }
+                }	
+	}
+}

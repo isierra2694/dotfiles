@@ -1,0 +1,52 @@
+@import url("file:///etc/xdg/waybar/style.css");
+
+* {
+	font-family: 'JetBrainsMono Nerd Font Mono', 'Font Awesome 6 Free';
+	font-size: 14;
+	font-weight: 600;
+	color: #ebdbb2;
+}
+
+window#waybar {
+	background-color: #1d2021;
+	border: none;
+}
+
+tooltip {
+	background-color: #1d2021;
+	border: 2px solid #404040;
+	border-radius: 0px;
+}
+
+#workspaces {
+	
+}
+
+#workspaces button {
+	margin: 5px 0px 5px 5px;
+	background-color: #504945;
+	border: none;
+}
+
+#workspaces button.focused {
+	background-color: #98971a;
+	box-shadow: none;
+}
+
+#cpu, #memory, #wireplumber {
+	background-color: #504945;
+	margin: 5px 0px 5px 5px;
+	color: #ebdbb2;
+}
+
+#network {
+	background-color: #689d6a;
+	margin: 5px 0px 5px 5px;
+	color: #fbf1c7;
+}
+
+#clock {
+	background-color: #458588;
+	margin: 5px;
+	color: #fbf1c7;
+}

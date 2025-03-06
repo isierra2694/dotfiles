@@ -33,6 +33,11 @@ tooltip {
 	box-shadow: none;
 }
 
+#workspaces button:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+}
+
 #cpu, #memory, #wireplumber {
 	background-color: #504945;
 	margin: 5px 0px 5px 5px;

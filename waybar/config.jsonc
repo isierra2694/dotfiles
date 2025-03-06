@@ -43,6 +43,7 @@
 		"interface": "wlp15s0",
 		"format": "{ipaddr}",
 		"format-wifi": "{ipaddr}",
+		"family": "ipv4",
 		"tooltip-format": "interface: {ifname}\nSSID: {essid}\n\n{bandwidthUpBits} up, {bandwidthDownBits} down",
 		"format-disconnected": "disconnected",
 		"interval": 5
